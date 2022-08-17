@@ -1,0 +1,15 @@
+{
+  "folders": [
+	{
+		"name": "Projeto_html_css",
+		"path": "..\\..\\..\\Projeto_html_css"
+	},
+	{
+		"name": "img",
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Projeto_html_css"
+  }
+}

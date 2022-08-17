@@ -3,9 +3,9 @@ body{
   margin: 0px;
   background: #f7f7f7;
   display: grid;
-  gap: 60px;
+  gap: 3.75rem;
   justify-items: center; /*Alinhas os itens ao centro*/
-  margin-top: 60px; 
+  margin-top: 3.75rem; 
 }
 
 img{
@@ -17,9 +17,10 @@ a{
   text-decoration:none ;
 }
 
- div.menu > a:hover{
+ div.menu > nav > ul > li > a:hover{
   transition: 1s;
   background: #e21;
+  border: 2px solid black;
 }
 a.veja:hover{
   transition: 0.5s;
@@ -31,7 +32,7 @@ a,p,h1,h2,h3{
 }
 
 p{
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 1.3;
 }
 
@@ -39,7 +40,7 @@ p{
   text-decoration:none;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /*espaçamento*/
+  gap: 1.25rem; /*espaçamento*/
   justify-content: center; /*sempre alinhados ao centro*/
   transition: all 400ms ease;
 }
@@ -47,14 +48,15 @@ ul {
   list-style: none;
   padding: 0px;
   margin: 0px;
-  gap: 20px;
+  gap: 1.25rem;
   display: flex;
   flex-wrap: wrap;
 }
 
 .menu a{
+  border: 2px solid #ffffff;
   background: #fff;
-  padding: 15px 30px;
+  padding: 0.9375rem 1.875rem;
   border-radius: 4px;
   color: black;
   text-transform: uppercase; /*Para ficar em letra maiúscula*/
@@ -63,45 +65,64 @@ ul {
 .conteudo{
   display: grid; /*Para deixar em colunas*/
   grid-template-columns: 1fr 1fr; /*quantidade de colunas*/
-  max-width: 1000px; /*Definir um limite para o conteúdo nas laterais*/
+  max-width: 62.5rem; /*Definir um limite para o conteúdo nas laterais*/
 }
 .introdução{
   background: #fff;
-  padding: 40px;
+  padding: 2.5rem;
   text-align: right;
   position: relative;
   display: grid;
   align-content: center;
-  gap: 20px;
+  gap: 1.25rem;
   justify-items: end;
 }
-.detalhe{
-  width: 60px;
-  height: 4px;
+
+.introdução h1 {
+  font-size: 2rem;
+}
+
+.introdução::before{
+  content: "";
+  width: 3.75rem;
+  height: 0.25rem;
   background: #e21;
   position: absolute;
-  top: 30px;
-  right: -30px;
+  top: 1.875rem;
+  right: -1.875rem;
 }
+
 
 .veja{
   background: #e21;
   color: #fff;
-  padding: 15px 30px;
+  padding: 0.9375rem 1.875rem;
   border-radius: 4px;
   text-transform: uppercase;
 }
 
 .vantagens{
   background: white;
-  padding: 40px;
+  padding: 2.5rem;
+  
 }
 
 .vantagens-item{
+  background:#f3efef ;
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: 10px /*Primeiro valor vai ser das linhas*/ 20px; /*o segundo da coluna*/
-  padding: 20px;
+  gap: 0.625rem /*Primeiro valor vai ser das linhas*/ 1.25rem; /*o segundo da coluna*/
+  padding: 1.25rem;
+  border-left: 4px solid #ffffff
+}
+
+.item2{
+  background: #fff;
+
+}
+
+.vantagens-item:hover{
+  border-left: 4px solid #e21 ;
 }
 
 .vantagens-item p {
@@ -109,17 +130,19 @@ ul {
 }
 
 .subtitulo{
+  background-image: url(/img/onda.svg);
+ 
   text-align: right;
-  padding: 40px;
+  padding: 2.5rem;
   align-self: center; /*Para falar diretamente com o ítem*/
-  font-size: 64px;
+  font-size: 4rem;
   color: rgba(0, 0, 0, 0.356);
   text-transform: uppercase
 }
 
 .rodape{
   width: 100%;
-  padding: 40px;
+  padding: 2.5rem;
   text-align: center;
   background: #fff;
   box-sizing: border-box; /*faz com q o padding não seja somado*/
