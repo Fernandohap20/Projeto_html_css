@@ -1,3 +1,14 @@
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
 body{
   font-family: Arial, Helvetica, sans-serif;
   margin: 0px;
@@ -18,9 +29,10 @@ a{
 }
 
  div.menu > nav > ul > li > a:hover{
+  color: #ffffff;
   transition: 1s;
   background: #e21;
-  border: 2px solid black;
+  border: 2px solid;
 }
 a.veja:hover{
   transition: 0.5s;
@@ -35,7 +47,12 @@ p{
   font-size: 1.25rem;
   line-height: 1.3;
 }
-
+.logo{
+  text-align: center;
+  border: 20px;
+  margin: 30px;
+  margin-bottom: 70px;
+}
 .menu{
   text-decoration:none;
   display: flex;
@@ -51,9 +68,11 @@ ul {
   gap: 1.25rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center
 }
 
 .menu a{
+  display: block;
   border: 2px solid #ffffff;
   background: #fff;
   padding: 0.9375rem 1.875rem;
@@ -146,4 +165,36 @@ ul {
   text-align: center;
   background: #fff;
   box-sizing: border-box; /*faz com q o padding não seja somado*/
+}
+
+@media (max-width:60rem){
+  .conteudo{
+    grid-template-columns: 1fr;
+    
+  }
+  .introdução::before{
+    width: .25rem;
+    height: 3.75rem;
+    top: 17rem;
+    right: 1.5625rem;
+  }
+  .menu a{
+  text-align: center;
+  }
+
+  .menu ul {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+  }
+  .conteudo .subtitulo{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .conteudo .introdução{
+    text-align: center;
+    justify-items: center;
+  }
+  .conteudo h2{
+    text-align: center;
+  }
 }
