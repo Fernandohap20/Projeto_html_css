@@ -173,10 +173,7 @@ ul {
     
   }
   .introdução::before{
-    width: .25rem;
-    height: 3.75rem;
-    top: 17rem;
-    right: 1.5625rem;
+    display: none;
   }
   .menu a{
   text-align: center;
@@ -190,11 +187,13 @@ ul {
     font-size: 2rem;
     text-align: center;
   }
-  .conteudo .introdução{
-    text-align: center;
-    justify-items: center;
+  .introdução{
+    text-align: left;
+    justify-items: start;
   }
-  .conteudo h2{
-    text-align: center;
+  
+  .logo{
+    margin-top:0px ;
+    margin-bottom: 40px;
   }
 }
